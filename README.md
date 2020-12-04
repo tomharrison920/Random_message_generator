@@ -20,7 +20,8 @@ The sentences are chosen from the selection in sentences.js and the words from w
 * Node.js
 
 ## Setup
-Download the three .js files to the same directory and use Node.js to run message_generator.js in the console.
+
+Download the three .js files to the same directory and use ```node message_generator.js``` in the console.
 
 
 ## Status
