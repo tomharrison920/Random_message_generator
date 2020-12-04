@@ -41,12 +41,12 @@ function constructRandSentence(){
                 if (randSentence[i]==='VERBed' && (randWord.lastIndexOf('e') === RandWordLen-1 || 
                 (randWord.lastIndexOf('e') === RandWordLen-2 && randWord[RandWordLen-1]===/\p/))){
                     randSentence[i] = 'VERBd';
-                } else if (randSentence[i]==='VERBs' && (randWord.lastIndexOf('e') === RandWordLen-1 || 
+                } else if (randSentence[i]==='VERBs' && (randWord.lastIndexOf('s') === RandWordLen-1 || 
                 (randWord.lastIndexOf('s') === RandWordLen-2 && randWord[RandWordLen-1]===/\p/))){
                     randSentence[i] = 'VERBes';
-                } else if (randSentence[i]==='VERBed' && (randWord.lastIndexOf('e') === RandWordLen-1 || 
+                } else if (randSentence[i]==='VERBed' && (randWord.lastIndexOf('y') === RandWordLen-1 || 
                 (randWord.lastIndexOf('y') === RandWordLen-2 && randWord[RandWordLen-1]===/\p/))){
-                    randWord[randWord.length-1] = 'i';
+                    randWord = randWord.slice(0,RandWordLen-1)+'i';
                 } else if ((randSentence[i].includes('NOUN') || randSentence[i].includes('ADJECTIVE')) && 
                 vowels.includes(randWord[0]) && randSentence[i-1]==='a'){
                     randSentence[i-1] = 'an'
