@@ -25,7 +25,7 @@ function constructRandSentence(){
     const sentenceTypeIndex = Math.floor(Math.random()*sentencesKeysArr.length); //will work with any num of keys so other topics can easily be added to sentences.js
     const sentenceTypeArr = sentences[sentencesKeysArr[sentenceTypeIndex]];
     let randSentence = sentenceTypeArr[Math.floor(Math.random()*sentenceTypeArr.length)];
-    console.log(randSentence);
+    //console.log(randSentence);
     randSentence = randSentence.split(' ');
     for (let i=0; i<randSentence.length;i++){
         for (let j=0; j<wordTypeArr.length; j++){
